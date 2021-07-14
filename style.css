@@ -28,7 +28,8 @@ body{
     color: #FFFFFF;
     font-size: 64px;
     width: 485px;
-    height: 230px;
+    margin-top: 10px;
+    margin-bottom: 0%;
 }
 .link-button{
     text-decoration: none;
@@ -46,7 +47,6 @@ body{
 }
 .intro-banner img{
     width: 556px;
-    height: 438px;
     transition: transform 5s ease-in-out;
 }
 .intro-banner img:hover{
@@ -87,6 +87,15 @@ body{
     margin:10px 0px;
     padding:0px 15px;
 }
+/* Iframe styles */
+.song-title{
+    color: tomato;
+    font-size: 28px;
+    text-shadow:10px 5px 10px tomato;
+}
+.song-video{
+    box-shadow: 5px 5px 40px grey;
+}
 /* Footer styles */
 .logo img{
     width: 484px;
@@ -111,3 +120,46 @@ body{
     margin-top: 4px;
     margin-bottom: 0%;
 }
+
+/* Media Queries */
+/* Mobile Device */
+@media only screen and (max-width:688px) {
+    body{
+        margin: 0%;
+        padding: 0%;
+    }
+    .container{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .intro-header{
+        width: 100%;
+        height: 900px;
+        background-color:#2D25A0;
+        flex-direction: column;
+    }
+    .intro-title{
+        margin: 5px;
+    }
+    .intro-name{
+        width: 100%;
+        margin: 0%;
+        
+    }
+    .intro-banner img{
+        width: 100%;
+        padding: 50px 0px;
+    }
+    .link-button{
+        width: 30%;
+    }
+    .players{
+        grid-template-columns: repeat(1,1fr);
+        width: 100%;
+    }
+    .song-video{
+        width: 100%;
+    }
+}
+    

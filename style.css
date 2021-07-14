@@ -91,10 +91,27 @@ body{
 .song-title{
     color: tomato;
     font-size: 28px;
-    text-shadow:10px 5px 10px tomato;
+    text-shadow:10px 5px 10px rgb(231, 137, 120);
 }
 .song-video{
     box-shadow: 5px 5px 40px grey;
+}
+/* Photo Gallery Styles */
+.gallery{
+    display: flex;
+}
+.gallery img{
+    width: 288px;
+    padding: 3px;
+    box-shadow: 3px 3px 20px grey;
+}
+.gallery-2{
+    display: flex;
+}
+.gallery-2 img{
+    width: 170px;
+    padding: 3px;
+    box-shadow: 3px 3px 20px grey;
 }
 /* Footer styles */
 .logo img{
@@ -161,11 +178,18 @@ body{
     .song-video,.song-title{
         width: 90%;
     }
+    .gallery{
+        flex-direction: column;
+    }
+    .gallery-2{
+        flex-direction: column;
+    }
     .logo img{
         width: 90%;
     }
     .admin-right{
         margin-bottom: 150px;
     }
+
 }
     
